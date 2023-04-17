@@ -251,39 +251,19 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 1000px;
+  min-height: 900px;
   background: url('../img/hero-min.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
-  .down-arrow a {
-    color: $txt-light;
-  }
-  h1 {
-    color: $txt-light;
-    margin-bottom: 40px;
-  }
-  p.intro {
-    color: $txt-light;
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 80px;
-  }
   .hero-content {
-    padding-top: 0px;
+    padding-top: 100px;
   }
-  .hero-content img {
-    width: 40%;
-    margin-bottom: 50%;
-  }
+}
+.hero-img {
+  padding-top: 250px;
 }
 .navigation {
   transition: all 300ms ease-in-out;
