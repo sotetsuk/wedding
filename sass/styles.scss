@@ -763,11 +763,13 @@ RSVP form
   display: none;
 }
 label {
-  background-color: skyblue;
+  width: 45%;
+  background-color: white;
   padding: 10px 20px;
 }
 .radiobutton:checked + label {
-  background-color: pink;
+  color: white;
+  background-color: #E8CA6F;
 }
 
 /* ==========================================================================

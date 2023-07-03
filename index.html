@@ -161,10 +161,12 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
+                        <h3>ご登録ありがとうございました</h3>
+                        <div align="left">
+                        <p>お連れ様の出席情報も再度フォームからご登録いただけます</p>
+                        </div>
                         <!--- <div id="add-to-cal"></div> --->
-                        <button type="button" class="btn-fill btn-accent btn-large rsvp-btn" data-dismiss="modal" aria-label="Close">OK!</button>
+                        <button type="button" class="btn-fill btn-accent btn-large rsvp-btn" data-dismiss="modal" aria-label="Close">OK</button>
                     </div>
                 </div>
             </div><!-- /.modal-content -->
@@ -175,19 +177,20 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>RSVP</h3>
-                <p>御名前とお住まいの都道府県をご入力の上、勝手ながら8月4日までにご返事を頂ければ幸いです</p>
+                <p>勝手ながら <b>2023.8.4</b> までにご返事を頂ければ幸いです</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div>
                         <div class="radiobox">
-                            <input id="attend" class="radiobutton" name="response" type="radio" value="Attend" required/>
+                            <input id="attend" class="radiobutton" name="response" type="radio" value="Attend" required checked/>
                             <label for="attend">出席</label>
                             <input id="decline" class="radiobutton" name="response" type="radio" value="Decline" />
                             <label for="decline">欠席</label> 
                         </div>
                     </div>
                     <div>
+                        <div align="left"><small>御名前（フルネーム）</small></left>
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
                                                                  placeholder="御名前"
@@ -195,6 +198,7 @@
                             </div>
                     </div>
                     <div>
+                        <div align="left"><small>お住まいの都道府県</small></left>
                             <div class="form-input-group">
                                 <i class="fa fa-map-pin"></i>
                                 <select name="prefecture">
@@ -262,11 +266,14 @@
                     </div>
                     <div>
                     <button class="btn-fill rsvp-btn">
-                        送信
+                        <b>送信</b>
                     </button>
                     </div>
                     </br>
-                    <p>食物アレルギーやその他の理由により食事に制限がある方はお手数ではございますが<a href="https://www.tg-wn.com/guest/allergy-entry/ISK0000532078-$2y$10$sU2rB7R7MeAwR1c1qaVOSOxiY7ZO7aGVfbuSYIVFN5LPrZwze277a">こちら</a>からご登録ください</p>
+                    <div align="left">
+                    <p>*お連れ様の出席情報もフォームから再度ご登録いただけます</br>
+                    *食物アレルギーやその他の理由により食事に制限がある方はお手数ではございますが<a href="https://www.tg-wn.com/guest/allergy-entry/ISK0000532078-$2y$10$sU2rB7R7MeAwR1c1qaVOSOxiY7ZO7aGVfbuSYIVFN5LPrZwze277a">こちら</a>からご登録ください</p>
+                    </div>
                 </form>
             </div>
         </div>
