@@ -141,7 +141,7 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>送信中です</strong> 少々お待ち下さい'));
 
         $.post('https://script.google.com/macros/s/AKfycbzN9_3XYm5cqiiBm4SuOB4LWR4f1u4JDJs4Pd-kfAsplmlp69U74qYPK7d7R4v9Gc0/exec', data)
             .done(function (data) {
